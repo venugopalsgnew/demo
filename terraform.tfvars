@@ -1,2 +1,2 @@
-access_key  = ""
-secret_key  = ""
+accesskey  = ""
+secretkey  = ""
