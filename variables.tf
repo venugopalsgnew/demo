@@ -6,3 +6,12 @@ variable "instancetype" {
     type    = string
     default = "t2.micro"
 }
+
+variable "accesskey" {
+    type = string
+    
+}
+
+variable "secretkey" {
+    type = string
+}
