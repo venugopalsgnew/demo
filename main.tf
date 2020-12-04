@@ -23,4 +23,27 @@ resource "aws_instance" "web" {
   }
 }
 
+resource "aws_dynamodb_table" "terraform_locks" {
+  name         = "terraform-up-and-running-locks-324234"
+  billing_mode = "PAY_PER_REQUEST"
+  hash_key     = "LockID"
+  attribute {
+    name = "LockID"
+    type = "S"
+  }
+}
+
+
+terraform {
+  backend "s3" {
+    # Replace this with your bucket name!
+    bucket         = "estin-hassi-module-27nov2020"
+    key            = "global/s3/terraform.tfstate"
+    region         = "us-east-2"
+    # Replace this with your DynamoDB table name!
+    dynamodb_table = "terraform-up-and-running-locks-324234"
+    encrypt        = true
+  }
+}
+
 #test
