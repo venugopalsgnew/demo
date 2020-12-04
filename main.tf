@@ -39,7 +39,7 @@ terraform {
     # Replace this with your bucket name!
     bucket         = "estin-hassi-module-27nov2020"
     key            = "global/s3/terraform.tfstate"
-    region         = "us-east-2"
+    region         = "ap-south-1"
     # Replace this with your DynamoDB table name!
     dynamodb_table = "terraform-up-and-running-locks-324234"
     encrypt        = true
