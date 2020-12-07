@@ -56,4 +56,8 @@ resource "aws_instance" "web2" {
   }
 }
 
+resource "aws_instance" "web2" {
+  ami           = var.image
+  instance_type = var.instancetype
+
 #test -- Testing state file store location
