@@ -56,7 +56,7 @@ resource "aws_instance" "web2" {
   }
 }
 
-resource "aws_instance" "web2" {
+resource "aws_instance" "web5" {
   ami           = var.image
   instance_type = var.instancetype
 
