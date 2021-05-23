@@ -1,3 +1,4 @@
+test
 This is for testing purpose
 variable "image" {
     type    = string
