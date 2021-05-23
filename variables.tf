@@ -1,3 +1,4 @@
+This is for testing purpose
 variable "image" {
     type    = string
     default = "ami-08f63db601b82ff5f" 
